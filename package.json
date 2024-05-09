@@ -16,7 +16,7 @@
 				{
 					"command": "proposed.dummyMenu",
 					"group": "navigation",
-					"when": "view == workbench.debug.variablesView"
+					"when": "view == workbench.debug.variablesView || view == workbench.panel.repl.view"
 				}
 			],
 			"debug/toolBar": [
