@@ -1,6 +1,7 @@
 {
 	"enabledApiProposals": [
-		"debugContext"
+		"debugContext",
+		"viewContainerContext"
 	],
 	"contributes": {
 		"commands": [
@@ -16,13 +17,6 @@
 					"command": "proposed.dummyMenu",
 					"group": "navigation",
 					"when": "view == workbench.debug.variablesView"
-				}
-			],
-			"view/container/title": [
-				{
-					"command": "proposed.dummyMenu",
-					"group": "navigation",
-					"when": "viewContainer == workbench.view.debug"
 				}
 			],
 			"debug/toolBar": [
@@ -55,9 +49,11 @@
 					"command": "proposed.dummyMenu"
 				}
 			],
-			"debug/console/context": [
+			"view/container/title": [
 				{
-					"command": "proposed.dummyMenu"
+					"command": "proposed.dummyMenu",
+					"group": "navigation",
+					"when": "viewContainer == workbench.view.debug"
 				}
 			]
 		}
